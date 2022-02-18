@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="133dp"
+        android:layout_height="156dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_home" />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_login"
+    android:text="Royal App"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/img_logo"
+    android:layout_centerHorizontal="true"
+    android:textColor="#FFEB3B"
+    android:textSize="50sp"
+    android:textStyle="bold"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:background="#4DFFFFFF"
+        android:layout_margin="40dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_bg"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="20dp"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:textColor="#E91E63"
+            android:textColorHint="#4D000000" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bg"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:textColor="#E91E63"
+            android:textColorHint="#4D000000" />
+
+    <TextView
+        android:id="@+id/tv_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:layout_alignParentRight="true"
+        android:text="Forgot password?"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"/>
+
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:text="Login"
+        android:background="@drawable/btn_bg"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+
